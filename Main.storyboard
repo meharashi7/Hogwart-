@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SecondViewController" customModule="Hogwarts_Houses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="eLF-QM-Pep">
+                                <rect key="frame" x="159" y="700" width="93" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="4Yg-kE-twZ" kind="show" id="089-oO-Clg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Houses.gif" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-iW-eJB">
+                                <rect key="frame" x="-16" y="148" width="424" height="486"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0022371715875248383" green="0.0023341254703125665" blue="0.0025370489690721421" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Uo-DB-bG9"/>
+                    <connections>
+                        <outlet property="imageview" destination="qHF-iW-eJB" id="Bgk-zO-zeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3561" y="-696"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="Kzg-Ty-wgY">
+            <objects>
+                <viewController id="4Yg-kE-twZ" userLabel="Third View Controller" customClass="ThirdViewController" customModule="Hogwarts_Houses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pln-EN-Ksz" userLabel="View ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEU-Sr-MXN">
+                                <rect key="frame" x="156" y="701" width="106" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <connections>
+                                    <segue destination="Gde-tw-Y7f" kind="show" id="zjv-jU-R19"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gryffindor.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gMS-Sk-lxN">
+                                <rect key="frame" x="-18" y="149" width="411" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.109803915" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hK0-5Z-sad"/>
+                        <color key="backgroundColor" red="0.109803915" green="0.0078431377190000002" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DoV-kb-WLN"/>
+                    <connections>
+                        <outlet property="ImageView" destination="gMS-Sk-lxN" id="5BD-Zq-lUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlI-9k-166" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788.54961832061065" y="3.5211267605633805"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="nen-Y0-whq">
+            <objects>
+                <viewController id="Gde-tw-Y7f" customClass="FourthViewController" customModule="Hogwarts_Houses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mvh-oE-ccA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7G-nR-NrG">
+                                <rect key="frame" x="151" y="710" width="90" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" red="0.047058824450000002" green="0.1019607931" blue="0.02352941222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Hhq-Um-dtm" kind="show" id="PXl-Be-TqZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slytherin.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Wt9-29-XV5" userLabel="ImageView">
+                                <rect key="frame" x="-68" y="147" width="528" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PsN-QX-HzK"/>
+                        <color key="backgroundColor" red="0.043137259779999999" green="0.094117648900000003" blue="0.02352941222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                        <rect key="contentStretch" x="0.5" y="0.0" width="1" height="1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGF-8n-nzn"/>
+                    <connections>
+                        <outlet property="ImageView" destination="Wt9-29-XV5" id="gvk-1d-h24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOW-3m-xz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580.9160305343512" y="3.5211267605633805"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="dkK-Xv-YBd">
+            <objects>
+                <viewController id="Hhq-Um-dtm" userLabel="Fifth View Controller" customClass="FifthViewController" customModule="Hogwarts_Houses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SbJ-JE-rlx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7w-LE-kgy">
+                                <rect key="frame" x="140" y="707" width="113" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" red="0.38431376220000002" green="0.270588249" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="4Xw-RB-7sp" kind="show" id="dlh-Bg-uDc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hufflepuff.gif" id="J9I-GV-wJO" userLabel="ImageView">
+                                <rect key="frame" x="-26" y="144" width="445" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000003579999999" green="0.27450981740000002" blue="0.078431375319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.1058823466" green="0.078431375319999996" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zAQ-je-hsp"/>
+                        <color key="backgroundColor" red="0.38823530080000002" green="0.27450981740000002" blue="0.074509806930000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.1058823466" green="0.086274504660000001" blue="0.0078431377190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" keyboardKey="YES"/>
+                        </accessibility>
+                    </view>
+                    <navigationItem key="navigationItem" id="M0b-aC-1PV"/>
+                    <connections>
+                        <outlet property="imageview" destination="J9I-GV-wJO" id="fHj-Ex-Ss9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lW-Lc-cof" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377.8625954198474" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="k9M-Yz-6ii">
+            <objects>
+                <viewController id="4Xw-RB-7sp" customClass="ViewController" customModule="Hogwarts_Houses" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhN-ac-eYc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ravenclaw.gif" translatesAutoresizingMaskIntoConstraints="NO" id="eJm-8D-j2W">
+                                <rect key="frame" x="-17" y="142" width="410" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.019607843829999999" green="0.047058824450000002" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb8-uz-DFj">
+                                <rect key="frame" x="159" y="692" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="puZ-aa-7uN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rnc-cL-CtX"/>
+                        <color key="backgroundColor" red="0.019607843829999999" green="0.047058824450000002" blue="0.1686274707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.0039215688589999999" green="0.01176470611" blue="0.035294115539999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WaU-9x-r5S"/>
+                    <connections>
+                        <outlet property="imageview" destination="eJm-8D-j2W" id="xpd-5U-byk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tT-hh-1PV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3162.5954198473282" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.047058824450000002" green="0.1019607931" blue="0.02352941222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="Gryffindor.gif" width="500" height="600"/>
+        <image name="Houses.gif" width="640" height="480"/>
+        <image name="Hufflepuff.gif" width="400" height="480"/>
+        <image name="Ravenclaw.gif" width="500" height="600"/>
+        <image name="Slytherin.gif" width="415" height="498"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
